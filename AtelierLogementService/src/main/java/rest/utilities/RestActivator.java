@@ -1,8 +1,8 @@
 package rest.utilities;
 
 import javax.ws.rs.ApplicationPath;
-
-//@ApplicationPath("/api")
-public class RestActivator {
+import javax.ws.rs.core.Application;
+@ApplicationPath("/api")
+public class RestActivator extends Application {
 
 }

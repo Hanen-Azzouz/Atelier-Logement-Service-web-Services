@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import rest.entites.Logement;
-import rest.entites.Logement.Type;;
+import rest.entites.Logement.Type;
 public class LogementBusiness {
 	
 	private List<Logement> logements;
@@ -14,8 +14,8 @@ public class LogementBusiness {
 		logements=new ArrayList<Logement>();
 		logements.add(new Logement(1,"27, Rue des roses", "El ghazela","Ariana",Type.Studio,"cuisine equipee",300f));
 		logements.add(new Logement(5,"58, Rue des roses", "El ghazela","Ariana",Type.EtageVilla,"cuisine equipee",450f));
-		logements.add(new Logement(2,"201, R�sidence Omrane4", "Riadh El Andalous","Ariana",Type.Appartement,"chauffage central, ascenseur, climatisation",700f));
-		logements.add(new Logement(3,"540, R�sidence Les Tulipes", "El Aouina","Ariana",Type.Appartement,"S+2, chauffage central, ascenseur, climatisation",500f));
+		logements.add(new Logement(2,"201, Residence Omrane4", "Riadh El Andalous","Ariana",Type.Appartement,"chauffage central, ascenseur, climatisation",700f));
+		logements.add(new Logement(3,"540, Residence Les Tulipes", "El Aouina","Ariana",Type.Appartement,"S+2, chauffage central, ascenseur, climatisation",500f));
 		logements.add(new Logement(4,"78, Rue des Oranges", "Bardo","Tunis",Type.EtageVilla,"chauffage central, ascenseur, climatisation",400f));
 	}
 
