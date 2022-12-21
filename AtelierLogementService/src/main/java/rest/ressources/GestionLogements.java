@@ -120,5 +120,5 @@ public class GestionLogements {
 		}
 		return Response.status(Status.NOT_FOUND).entity("Logement inexistant").build();
 	}
-	
+	//http://localhost:8082/AtelierLogementService/api/logements/getByReference?reference=4
 }
