@@ -1,0 +1,38 @@
+type Logement{
+      reference:int!
+	  adresse:String
+	  delegation:String
+	  gouvernorat:String
+	  type:Type
+	  description:String
+	  prix:float
+}
+type RendezVous{
+      id:int!
+	  date;
+	  heure:String
+	  logement:Logement
+	  numTel:String
+}
+type Query{
+findAllLogements:[Logement]
+findLogementsByType( type:Type):[Logement]
+getLogementsByReference( reference:int):Logement
+getListeRendezVous:[RendezVous]
+getListeRendezVousByLogementRef(reference:int):[RendezVous]
+getLogementByRDV(idRDV:int):Logement
+
+}
+type Mutation{
+addRendezVous(rendezVous:RendezVous):boolean
+updateRendezVous(rendezVous:RendezVous):boolean
+deleteRendezVous(id:int):boolean
+saveLogement(logement:Logement):void
+
+
+
+}
+schema{
+queryLogement:Query
+mutation:Mutation
+}
